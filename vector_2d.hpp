@@ -1,3 +1,7 @@
+/* VECTOR_2D.hpp | MIT License | https://github.com/kirin123kirin/include/raw/main/LICENSE */
+#ifndef _VECTOR_2D_HPP_
+#define _VECTOR_2D_HPP_
+
 #include <string>
 #include <vector>
 
@@ -27,6 +31,18 @@ std::vector<std::vector<std::basic_string_view<CharT>>> records(const CharT* txt
 }
 
 template <typename CharT>
+std::vector<std::vector<std::basic_string_view<CharT>>> records(const std::basic_string_view<CharT>& txt,
+                                                                const char sep = '\t') {
+    return records(txt.data(), sep);
+}
+
+template <typename CharT>
+std::vector<std::vector<std::basic_string_view<CharT>>> records(const std::basic_string<CharT>& txt,
+                                                                const char sep = '\t') {
+    return records(txt.data(), sep);
+}
+
+template <typename CharT>
 std::vector<std::vector<std::basic_string_view<CharT>>> columns(const CharT* txt, const char sep = '\t') {
     const CharT *p = txt, *start = txt;
     std::vector<std::vector<std::basic_string_view<CharT>>> vec;
@@ -48,3 +64,17 @@ std::vector<std::vector<std::basic_string_view<CharT>>> columns(const CharT* txt
         }
     }
 }
+
+template <typename CharT>
+std::vector<std::vector<std::basic_string_view<CharT>>> columns(const std::basic_string_view<CharT>& txt,
+                                                                const char sep = '\t') {
+    return columns(txt.data(), sep);
+}
+
+template <typename CharT>
+std::vector<std::vector<std::basic_string_view<CharT>>> columns(const std::basic_string<CharT>& txt,
+                                                                const char sep = '\t') {
+    return columns(txt.data(), sep);
+}
+
+#endif /* _VECTOR_2D_HPP_ */

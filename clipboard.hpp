@@ -1,4 +1,4 @@
-/* clipboard.hpp | MIT License | https://github.com/kirin123kirin/clipboard/raw/main/LICENSE */
+/* clipboard.hpp | MIT License | https://github.com/kirin123kirin/include/raw/main/LICENSE */
 #ifndef _CLIPBOARD_HPP_
 #define _CLIPBOARD_HPP_
 

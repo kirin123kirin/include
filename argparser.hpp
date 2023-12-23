@@ -1,4 +1,4 @@
-/* argparser.hpp | MIT License | https://github.com/kirin123kirin/argparser/raw/main/LICENSE */
+/* argparser.hpp | MIT License | https://github.com/kirin123kirin/include/raw/main/LICENSE */
 #ifndef _ARGPARSE_HPP_
 #define _ARGPARSE_HPP_
 
